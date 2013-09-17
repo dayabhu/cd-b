@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Technology Expo</title>
+        <link rel="stylesheet" href="css/foundation.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <link rel="stylesheet" href="css/testone.css" />
+        <link rel="stylesheet" href="stylesheets/custom.css" />
+
+        <style type="text/css">
+
+
+
+        </style>
+    </head>
+    <body>
+        <h6>This is testing GIT Technology</h6>
+        <div class="row">
+            <div class="12 columns">
+                <h4>Technology Expo | Feedback Form</h4>
+                <!-- s --> <!-- For the sticky header -->
+            </div>
+        </div>
+        <div id="fieldsetContainer">
+            <!-- Grid Example -->
+            <form action="testone.php" method="post">
+                <section id="pageOne" class="pages">
+                    <h2>How informative have you found the Expo?</h2>
+                    <span class="notes">Move the slider below - 1 being the least and 10 being the most</span><hr>
+                    <span class="pageNumber">1/6</span>
+                    <label for="informative">Informative:</label>
+                    <input type="text" name="informative" id="informative" value="5"/>
+                    <div id="sliderOne"></div>
+                    <input type="button" class="tiny button" id="01_continue" value="Continue"/>
+                </section>
+                <section id="pageTwo" class="pages"> 
+                    <h2>Would you recommend the Expo to others?</h2>
+                    <span class="notes">Move the slider below</span>
+                    <span class="pageNumber">2/6</span>
+                    <label for="recommend">Recommend:</label>
+                    <input type="text" name="recommend" id="recommend" value="No"/>
+                    <div id="sliderTwo"></div>
+                    <input type="button"  class="tiny button" id="02_back" value="Back" />
+                    <input type="button" class="tiny button" id="02_continue" value="Continue" />
+                </section>
+                <section id="pageThree" class="pages"> 
+                    <h2>Should the Expo visit other offices?</h2>
+                    <span class="notes">Move the slider below</span>
+                    <span class="pageNumber">3/6</span>   
+                    <span class="notes-2">Where ?</span>
+                    <input type="text" name="visit" id="visit" value="No"/>
+                    <div id="sliderThree"></div>
+                    <fieldset class="ButtonList">
+                        <label for="visit">Visit:</label>
+                        <input name="selectorOne[]" id="1" type="checkbox" value="Glasgow" />
+                        <label for="1">Glasgow</label>
+                        <input name="selectorOne[]" id="2" type="checkbox" value="Manchester" /> <label for="2">Manchester</label>
+                        <input name="selectorOne[]"  id="3" type="checkbox" value="Birmingham" /><label for="3">Birmingham</label>
+                        <input name="selectorOne[]"   id="4"  type="checkbox" value="Bristol" /><label for="4">Bristol</label>
+                        <input name="selectorOne[]"  id="5"  type="checkbox" value="Epson"/><label for="5">Epson</label>
+                        <input type="button"  class="tiny button" id="03_back" value="Back" />
+                        <input type="button" class="tiny button" id="03_continue" value="Continue"/>
+                    </fieldset>
+                </section>
+                <section id="pageFour" class="pages"> 
+                    <h2>How would you rate the areas you’ve visited?</h2>
+                    <span class="notes">Move the sliders for the areas you visited below</span>
+                    <span class="pageNumber">4/6</span>
+                    <div class="smallSliders">
+                        <label for="inform">Inform:</label>
+                        <input type="text" name="inform" id="inform" value="5"/>
+                        <div id="sliderFour"></div>
+                        <label for="ux">UX/UI:</label>
+                        <input type="text" name="ux" id="ux" value="5"/>
+                        <div id="sliderFive"></div>
+                        <label for="hSkills">H&amp;T Skills:</label>
+                        <input type="text" name="hSkills" id="hSkills" value="5"/>
+                        <div id="sliderSix"></div>
+                        <label for="bim">BIM:</label>
+                        <input type="text" name="bim" id="bim" value="5"/>
+                        <div id="sliderSeven"></div>
+                        <label for="rail">Rail:</label>
+                        <input type="text" name="rail" id="rail" value="5"/>
+                        <div id="sliderEight"></div>
+                        <label for="futures">Futures:</label>
+                        <input type="text" name="futures" id="futures" value="5"/>
+                        <div id="sliderNine"></div>
+                        <label for="video">Video:</label>
+                        <input type="text" name="video" id="video" value="5"/>
+                        <div id="sliderTen"></div>
+                    </div>
+                    <input type="button"  class="tiny button" id="04_back" value="Back" />
+                    <input type="button" class="tiny button" id="04_continue" value="Continue" />
+                </section>
+                <section id="pageFive" class="pages"> 
+                    <h2>Please add any additional comments</h2>
+                    <span class="pageNumber">5/6</span>
+                    <span class="notes-2">Comment:</span>
+                    <textarea placeholder="Please type your message" name="message" required cols="100" rows="20" maxlength="10000" class="eight" > </textarea>
+                    <fieldset class="ButtonList">
+                        <input name="selectorTwo[]" id="6" type="checkbox" value="General" /><label for="6">General</label>
+                        <input name="selectorTwo[]" id="7" type="checkbox" value="Technology" /><label for="7">Technology</label>
+                        <input name="selectorTwo[]" id="8" type="checkbox" value="Inform" /><label for="8">Inform</label>
+                        <input name="selectorTwo[]" id="9" type="checkbox" value="HT" /><label for="9">H&amp;T</label>
+                        <input name="selectorTwo[]" id="10" type="checkbox" value="UI/UX"/><label for="10">UI/UX</label>
+                        <input name="selectorTwo[]" id="11" type="checkbox" value="Video"/><label for="11">Video</label>
+                        <input name="selectorTwo[]" id="12" type="checkbox" value="Skills"/><label for="12">Skills</label>
+                        <input name="selectorTwo[]" id="13" type="checkbox" value="BIM"/><label for="13">BIM</label>
+                        <input name="selectorTwo[]" id="14" type="checkbox" value="Rail"/><label for="14">Rail</label>
+                        <input name="selectorTwo[]" id="15" type="checkbox" value="Futures"/><label for="15">Futures</label>
+                    </fieldset>
+
+                    <input type="button"  class="tiny button" id="05_back" value="Back" />
+                    <input type="button" class="tiny button" id="05_continue" value="Continue" />
+                </section>
+                <section id="pageSix" class="pages"> 
+                    <h2>Request further information</h2>
+                    <span class="pageNumber">6/6</span>   
+                    <label for="request">Request:</label>
+                    <input type="text" name="request" id="request" value="No"/>
+                    <div id="sliderEleven"></div>
+                    <span class="notes-2">Category</span>
+                    <fieldset class="ButtonList">
+                        <input name="selectorThree[]" id="16" type="checkbox" value="General" /><label for="16">General</label>
+                        <input name="selectorThree[]" id="17" type="checkbox" value="Technology" /><label for="17">Technology</label>
+                        <input name="selectorThree[]" id="18" type="checkbox" value="Inform" /><label for="18">Inform</label>
+                        <input name="selectorThree[]" id="19" type="checkbox" value="HT" /><label for="19">H&amp;T</label>
+                        <input name="selectorThree[]" id="20" type="checkbox" value="UI/UX"/><label for="20">UI/UX</label>
+                        <input name="selectorThree[]" id="21" type="checkbox" value="Video"/><label for="21">Video</label>
+                        <input name="selectorThree[]" id="22" type="checkbox" value="Skills"/><label for="22">Skills</label>
+                        <input name="selectorThree[]" id="23" type="checkbox" value="BIM"/><label for="23">BIM</label>
+                        <input name="selectorThree[]" id="24" type="checkbox" value="Rail"/><label for="24">Rail</label>
+                        <input name="selectorThree[]" id="25" type="checkbox" value="Futures"/><label for="25">Futures</label>
+
+
+                    </fieldset>
+                     <input type="button"  class="tiny button" id="06_back" value="Back" />
+                    <input type="submit" class="tiny button" id="06_continue" value="Finish" />
+                </section>
+                   
+
+            </form>
+        </div>
+      
+       
+        <script src="js/foundation.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery.ui.touch-punch.js"></script>
+        <script src="js/testone.js"></script>
+        
+        <script>
+    // This prevents to lock down the screen from swipe
+    document.ontouchmove = function(e) {
+        e.preventDefault();
+    };
+</script>
+        <script type="text/javascript">
+
+
+
+            $('input[type="checkbox"]').button();
+
+            $("#01_continue").click(function(e)
+            {
+                var targetOffset_s1 = $("#pageTwo").offset().left;
+                $('html, body').animate({scrollLeft: targetOffset_s1},'swing');
+                // e.preventDefault();   
+
+            });
+
+            $("#02_back").click(function(e)
+            {
+                var targetOffset_s1 = $("#pageOne").offset().left;
+                $('html, body').animate({scrollLeft: targetOffset_s1}, 'swing');
+                // e.preventDefault(); 
+
+            });
+
+            $("#02_continue").click(function(e)
+            {
+                var targetOffset_s1 = $("#pageThree").offset().left;
+                $('html, body').animate({scrollLeft: targetOffset_s1}, 'swing');
+                // e.preventDefault(); 
+
+            });
+
+            $("#03_back").click(function(e)
+            {
+                var targetOffset_s1 = $("#pageTwo").offset().left;
+                $('html, body').animate({scrollLeft: targetOffset_s1}, 'swing');
+                // e.preventDefault(); 
+
+            });
+            $("#03_continue").click(function(e)
+            {
+                var targetOffset_s1 = $("#pageFour").offset().left;
+                $('html, body').animate({scrollLeft: targetOffset_s1}, 'swing');
+                // e.preventDefault(); 
+
+            });
+
+            $("#04_back").click(function(e)
+            {
+                var targetOffset_s1 = $("#pageThree").offset().left;
+                $('html, body').animate({scrollLeft: targetOffset_s1}, 'swing');
+                // e.preventDefault(); 
+
+            });
+
+            $("#04_continue").click(function(e)
+            {
+                var targetOffset_s1 = $("#pageFive").offset().left;
+                $('html, body').animate({scrollLeft: targetOffset_s1}, 'swing');
+                // e.preventDefault(); 
+
+            });
+
+            $("#05_back").click(function(e)
+            {
+                var targetOffset_s1 = $("#pageFour").offset().left;
+                $('html, body').animate({scrollLeft: targetOffset_s1}, 'swing');
+                // e.preventDefault(); 
+
+            });
+
+            $("#05_continue").click(function(e)
+            {
+                var targetOffset_s1 = $("#pageSix").offset().left;
+                $('html, body').animate({scrollLeft: targetOffset_s1}, 'swing');
+                // e.preventDefault(); 
+
+            });
+
+            $("#06_back").click(function(e)
+            {
+                var targetOffset_s1 = $("#pageFive").offset().left;
+                $('html, body').animate({scrollLeft: targetOffset_s1}, 'swing');
+                // e.preventDefault(); 
+
+            });
+
+            $("#06_continue").click(function(e)
+            {
+                var targetOffset_s1 = $("#pageSeven").offset().left;
+                $('html, body').animate({scrollLeft: targetOffset_s1}, 'swing');
+                // e.preventDefault(); 
+
+            });
+
+
+
+
+
+
+
+
+        </script>
+
+
+
+    </body>
+</html>
